@@ -1,0 +1,12 @@
+You're invited to join the team on {{ site_name }}
+<br><br>
+{{ invited_by.first_name }} {{ invited_by.last_name }} ({{ invited_by.email }}) sent you this invitation.
+<br><br>
+You may Click this link into your browser: http://{{ site }}/api/accept_invitation/{{ code }}
+<br><br>
+Your sign-in email is:
+{{ email }}
+<br><br>
+
+Thanks for using our site!
+<br><br>
