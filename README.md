@@ -115,6 +115,16 @@ Invite people to join the group.Those invited must be registered on platform.
 	Request Payload	: {"emails": ["some_email_id@gmail.com"]}
 	
 	HTTP status code: HTTP_200_OK or HTTP_400_BAD_REQUEST or HTTP_401_UNAUTHORISED
+	
+x. User - Accept Group Invitation
+Accept the email inorder to join group.
+
+User will recieve an email on when the invite email is sent. 
+	
+	Endpoint 	: /api/accept_invitation/<invitation_code>/
+	Request Type 	: GET
+	
+	Response Http status codes : HTTP_200_OK or HTTP_404_NO_CONTENT
 
 ## Invite is sent to email address to be confirmed before you are part of the group
 
