@@ -148,10 +148,10 @@ class InviteToTeamAPIView(generics.CreateAPIView):
                                            })
         if serializer.is_valid(raise_exception=True):
             email_ids = serializer.validated_data.get('emails')
-            groupId = serializer.validated_data.get('team_pk')
-            group = Group.objects.get(pk=9)
+            groupId = serializer.validated_data.id_group
+            group = Group.objects.get(pk=groupId)
             self.create_invitations(email_ids=email_ids, invited_by=request.user, group=group)
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.validated_data.success, status=status.HTTP_200_OK)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

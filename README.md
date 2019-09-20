@@ -14,6 +14,8 @@ Features:
 
 * User Contribute saving
 
+* Admin View group Members
+
 * Admin Invite people to group
 
 
@@ -93,7 +95,17 @@ vii. User Contribute Group - Contribute savings to group
 	
 	HTTP status code: HTTP_200_OK
 	
-viii. Group - Invite
+viii. Admin View Group Members - View members by group and total savings 
+
+	Endpoint 	: /api/allmembers
+	Request Type 	: GET
+	Request Headers : 
+		Authorization : Bearer <token>
+	Request Payload	: {"groupId": <group_id>}
+	
+	HTTP status code: HTTP_200_OK
+	
+ix. Group - Invite
 Invite people to join the group.Those invited must be registered on platform.
 
 	Endpoint 	: /api/<groupId>/invite/

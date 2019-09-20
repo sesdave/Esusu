@@ -215,7 +215,9 @@ class TeamInvitationCreateSerializer(serializers.Serializer):
 
         team_pk = self.context.get('team_pk')
         user = self.context.get('user')
-
+        data.success={"success":"Invite successfully to sent to mail"}
+        if team_pk:
+            data.id_group = team_pk
         try:
             team = Group.objects.get(pk=team_pk, creator=user)
         except Group.DoesNotExist:
