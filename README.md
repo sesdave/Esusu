@@ -22,7 +22,7 @@ Features:
 API Documentation
 -----------------
 
-Postman collection : https://www.getpostman.com/collections/f803c13bd223791d1b21
+Postman collection : https://documenter.getpostman.com/view/7170305/SVmyQcPv
 
 i. User - Registration
 Create/ Register a new user.
@@ -179,7 +179,6 @@ A constraint that defines minimum length of password. Defaulted to 8
 Validity (in days) of user team invitation email. Defaulted to 7
 
 
-## Try it online: ##
-https://dry-stream-50652.herokuapp.com/
+
 	
 	
